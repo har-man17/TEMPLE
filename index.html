@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="hash.css">
+<style>
+
+nav{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: fadeInSection 3s ease-in-out;
+        }
+    
+        #kpt{
+            display:flex;
+            align-content: center;
+
+        }
+        #con{
+            text-align: center;
+            background-color: beige;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: red;
+            background-color: beige;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            animation: zoomIn 2s ease-in-out;
+        }
+        h4 {
+            color: chartreuse;
+            animation: slideIn 1s ease-out;
+        }
+        nav a {
+            color: blue;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: darkblue;
+            text-decoration: underline;
+        }
+        section {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: fadeInSection 2s ease-in-out;
+        }
+        #cs, #mc, #ec {
+            color: rgb(1, 1, 2);
+            font-size: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit" ]:hover {
+            background-color: darkblue;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+} 
+</style>
+</head>
+<body>
+    <h1>KARNATAKA POLYTECHNIC</h1>
+    <nav id="kpt">
+        <a href="#cs">CSE</a>
+        <a href="#mc">MECH</a>
+        <a href="#ec">EC</a>
+        <a href="#loc">LOCATION</a>
+        <a href="#con">CONTACT</a>
+    </nav>
+    <hr>
+    <section id="cs">
+        <h1>Computer Science</h1>
+        <img src="cs.jpg" height="150px" width="300">
+        <p>Computer science is the study of computation, information, and automation. Computer science spans theoretical disciplines (such as algorithms, theory of computation, and information theory) to applied disciplines (including the design and implementation of hardware and software).</p>
+    </section>
+    <hr>
+    <section id="mc">
+        <h1>Mechanical</h1>
+        <img src="me.jpg" height="150px" width="300">
+        <p>Mechanical engineering is the study of physical machines that may involve force and movement. It is an engineering branch that combines engineering physics and mathematics principles with materials science, to design, analyze, manufacture, and maintain mechanical systems.</p>
+    </section>
+    <hr>
+    <section id="ec">
+        <h1>Electronics and Communication</h1>
+        <img src="ec.jpeg" height="150px" width="300">
+        <p>Electronics is a scientific and engineering discipline that studies and applies the principles of physics to design, create, and operate devices that manipulate electrons and other electrically charged particles.</p>
+    </section>
+    <hr>
+    <section id="loc">
+        <h1>Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.248663040166!2d74.85164257411903!3d12.891725716626413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a145a8d7537%3A0x40972a862265bcb8!2sKarnataka%20(Govt.)%20Polytechnic!5e0!3m2!1sen!2sin!4v1720595011003!5m2!1sen!2sin" width="600" height="450" style="border: 5px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </section>
+    <hr>
+    <section >
+    <h1 id="con">Contact</h1>
+    Name:<input type="text"><br>
+    Contact:<input type="text"><br>
+    <input type=submit >
+     </section>
+</body>
+</head>
+</html>
